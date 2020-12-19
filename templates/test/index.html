@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Index{% endblock title %}
+
+{% block content %}
+    <h1>The Tic Tac Toe game!</h1>
+
+    <a href="{% url 'users:register' %}">Sign up</a>
+    <a href="{% url 'users:login' %}">Log in</a>
+{% endblock %}
