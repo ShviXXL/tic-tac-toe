@@ -1,0 +1,32 @@
+.logo {
+position: absolute;
+width: 96px;
+height: 42px;
+left: 198px;
+top: 40px;
+
+}
+
+
+
+.container {
+    
+position: relative;
+width: 1600px;
+height: 900px;
+background-color: #171717;
+margin: 0 auto;
+}
+
+.form {
+position: absolute;
+width: 366px;
+height: 88px;
+left: 200px;
+top: 426px;
+background: #171717;
+}
+
+.input-form{
+
+}
