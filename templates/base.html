@@ -19,16 +19,18 @@
         <div class="container">
             <header class="header">
                 <div class="logo">
-
-                <div class="header_logo">
-                    <a href="" class="header_logo-link">
-                        <img src="{% static 'img/svg/logo.svg' %}">
-                    </a>
+                    <div class="header_logo">
+                        <a href="{% url 'core:index' %}" class="header_logo-link">
+                            <img src="{% static 'img/svg/logo.svg' %}">
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
 
-        {% block content %}{% endblock content %}
+        {% block content %}
+            text
+        {% endblock content %}
         
         <script src="{% static 'js/jquery.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>

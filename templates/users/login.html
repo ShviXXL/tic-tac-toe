@@ -1,18 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %}Index{% endblock title %}
+{% load crispy_forms_tags %}
+
+{% block title %}Login{% endblock title %}
 
 {% block content %}
-  <div class="form">
+  <div class="form text-light">
     <form method="post">
     {% csrf_token %}
-      <div class="input-form">
-        <input type="text" placeholder="Username">
-      </div>
-      
-      <div class="input-form">
-        <input type="password" placeholder="Password">
-      </div>
+
+      {{ crispy }}
       
       <div class="input-form">
         <input type="submit" value="Log in">
